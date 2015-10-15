@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="lingoApp" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lingo Translator</title>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+</head>
+<body ng-controller="translateController">
+
+	<form ng-submit="translateSubmit()">
+		<label>Input Text: <input ng-model="translateData.word" type="text"></label>
+		<label>Input Language: <input type="text" ng-model="translateData.ogLang"></label>
+		<label>Output Language: <input ng-model="translateData.newLang" type="text"></label><br>
+		<label>Output Text: {{translation}}</label>
+		<input type="submit">
+
+	</form>
+
+
+	<script src="../js/main.js"></script>
+	
+</body>
+</html>
+
+
+
+<!--
+	<script src="https://www.googleapis.com/language/translate/v2/languages?key=AIzaSyDjotSVF_hLHDP0cZVzujbIuQcstrkX3Sc&target=zh-TW"></script>
+	-->

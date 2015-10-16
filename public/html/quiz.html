@@ -7,8 +7,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
 </head>
 <body ng-controller="quizController">
-<h1>Quiz Yo'Self </h1>
+	<h1>Quiz Yo'Self </h1>
+	
+	<div>
+		<label>Language: <select ng-model="language">
+			<option value="es">Spanish</option>
+			<option value="fr">French</option> 
+			<option value="de">German</option> 
+		</select></label>
+	</div>
 
+
+
+	<form ng-submit="quizSubmit()">
+	
+		<h3>Translate: </h3> <br>
+		<label>Input: <input type="text"></label>
+		<input type="submit"><br>
+	</form>
+
+	<h3>{{answer}}</h3>
 
 	<script src="../js/main.js"></script>
 	

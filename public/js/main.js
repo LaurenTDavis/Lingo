@@ -4,8 +4,6 @@ angular.module('lingoApp').controller('translateController',['$scope', '$http', 
 	
 
 	$scope.translateSubmit = function() {
-		
-
 		$http({
 			method 	: 'POST',
 			url		: '/',
@@ -19,7 +17,11 @@ angular.module('lingoApp').controller('translateController',['$scope', '$http', 
 }]);
 
 angular.module('lingoApp').controller('quizController',['$scope', '$http', function($scope, $http) {
+	
+	$scope.randomWords = ['rock', 'terrible', 'smart', 'pest','unsuitable', 'raspy', 'early', 'parallel', 'cannon', 'way', 'giddy', 'tip']
 
+	$scope.quizSubmit = function() {
 
+	}
 
 }]);

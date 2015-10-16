@@ -4,7 +4,7 @@ angular.module('lingoApp').controller('translateController',['$scope', '$http', 
 	
 
 	$scope.translateSubmit = function() {
-console.log('hello world');
+		
 
 		$http({
 			method 	: 'POST',
